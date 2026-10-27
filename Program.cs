@@ -52,24 +52,33 @@
 // }
 
 
-int[] GenerateScheduleSlots(int lessonsCount) {
-    int[] slots = new int[lessonsCount];
-    for (int i = 0; i < lessonsCount; i++) {
-        slots[i] = i + 1;
-    }
-    return slots;
-}
+// int[] GenerateScheduleSlots(int lessonsCount) {
+//     int[] slots = new int[lessonsCount];
+//     for (int i = 0; i < lessonsCount; i++) {
+//         slots[i] = i + 1;
+//     }
+//     return slots;
+// }
 
-int[] GenerateEvenSlots(int lessonsCount) {
-    int[] slots = new int[lessonsCount];
-    for (int i = 0; i < lessonsCount; i++) {
-        slots[i] = (i + 1) * 2; 
-    }
-    return slots;
-}
+// int[] GenerateEvenSlots(int lessonsCount) {
+//     int[] slots = new int[lessonsCount];
+//     for (int i = 0; i < lessonsCount; i++) {
+//         slots[i] = (i + 1) * 2; 
+//     }
+//     return slots;
+// }
 
-int[] evenSlots = GenerateEvenSlots(6);
+// int[] evenSlots = GenerateEvenSlots(6);
 
-foreach (int slot in evenSlots) {
-    Console.WriteLine(slot);
+// foreach (int slot in evenSlots) {
+//     Console.WriteLine(slot);
+// }
+
+
+int[] grades = { 4, 5, 3, 5, 4, 2 };
+Array.Sort(grades);
+
+foreach (int grade in grades)
+{
+    Console.WriteLine(grade);
 }
